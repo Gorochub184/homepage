@@ -1,0 +1,73 @@
+body {
+    background: #fffbe0;
+    color: #000000;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* ヘッダー */
+.nav {
+    text-align: center;
+    padding: 25px 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.nav h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #f5d773;
+}
+
+/* カードレイアウト */
+.cards {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+    background: rgba(255,255,255,1.0);
+    border-radius: 14px;
+    padding: 15px;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.2s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card img {
+    width: 50%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin: 8px 0;
+    color: #f5d773;
+}
+
+.card p {
+    font-size: 15px;
+    opacity: 0.85;
+}
+
+/* スマホで文字を大きく */
+@media (max-width: 600px) {
+    .nav h1 {
+        font-size: 28px;
+    }
+    .card h2 {
+        font-size: 22px;
+    }
+    .card p {
+        font-size: 17px;
+    }
+}
